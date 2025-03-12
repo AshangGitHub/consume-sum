@@ -37,12 +37,15 @@ export default defineConfig(({ mode }) => {
       target: 'esnext', // 针对非行内样式，需要构建规格为 es2020，否则样式会失效，控制台给出提示
       minify: false,
       cssCodeSplit: false,
+      outDir: 'dist',
+      assetsDir: 'assets',
+      // Cloudflare Pages 推荐配置
       rollupOptions: {
         output: {
           minifyInternalExports: false,
+          manualChunks: undefined
         },
       },
-      outDir: `dist/${env.VITE_PUBLISH_DIR}`,
     },
   };
 });
