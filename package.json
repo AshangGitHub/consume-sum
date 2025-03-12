@@ -16,7 +16,7 @@
     "publish-uat": "npm run build-uat && npm run upload",
     "publish-prod": "npm run build-prod && npm run upload",
     "build:cf": "NODE_ENV=production vite build",
-    "prebuild:cf": "corepack enable && yarn install --frozen-lockfile"
+    "prebuild:cf": "yarn install --frozen-lockfile"
   },
   "dependencies": {
     "element-plus": "^2.9.6",
