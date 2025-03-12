@@ -15,8 +15,7 @@
     "publish-dev": "npm run build-dev && npm run upload",
     "publish-uat": "npm run build-uat && npm run upload",
     "publish-prod": "npm run build-prod && npm run upload",
-    "build:cf": "yarn build dev",
-    "prebuild:cf": "yarn install --no-immutable"
+    "build:cf": "vite build --mode dev"
   },
   "dependencies": {
     "element-plus": "^2.9.6",
