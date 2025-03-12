@@ -1,0 +1,10 @@
+name = "cyberoller-web-configuration"
+type = "webpack"
+
+[build]
+command = "yarn install --frozen-lockfile && yarn build:cf"
+publish = "dist"
+
+[build.environment]
+NODE_VERSION = "18"
+YARN_VERSION = "3.2.2" 
